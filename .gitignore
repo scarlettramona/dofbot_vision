@@ -172,3 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+ros_ws/build/
+ros_ws/devel/
+ros_ws/build/
+ros_ws/install/
+ros_ws/log/
