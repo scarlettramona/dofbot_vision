@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>dofbot_description</name>
+  <version>0.0.1</version>
+  <description>URDF and meshes for Scarlett Dofbot</description>
+  <maintainer email="scarlettramona@live.com">Scarlett</maintainer>
+  <license>MIT</license>
+
+  <!-- ament build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- for processing XACRO -->
+  <build_depend>xacro</build_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <!-- to publish and view the robot -->
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- URDF parsing -->
+  <exec_depend>urdf</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
