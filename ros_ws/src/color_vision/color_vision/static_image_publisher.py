@@ -9,7 +9,7 @@ class StaticImagePublisher(Node):
     def __init__(self):
         super().__init__('static_image_publisher')
         # parameter for image path
-        self.declare_parameter('image_path', '/ros2_ws/src/color_vision/test.jpg')
+        self.declare_parameter('image_path', '/ros_ws/src/color_vision/test.jpg')
         path = self.get_parameter('image_path').get_parameter_value().string_value
         if not os.path.isfile(path):
             self.get_logger().error(f"Image not found: {path}")
